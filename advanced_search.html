@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            div{
+                padding: 10px;
+                position:static;
+                padding-top: 10px;
+                padding-left: 30px;
+            }
+            
+            .subdiv{
+                margin-left: 5px auto;
+                margin-top: 0px;
+                height: 25px;
+            }
+            .inp{
+                left: 18%;
+                position: fixed;
+                width: auto;
+                width: 600px;
+                height: 25px;
+            }
+            #button{
+                position:fixed;
+                left:52%;
+                height: 35px;
+                padding: 5px;
+                background-color: rgba(0, 119, 255, 0.788);
+                font-family: sans-serif;
+                text-align : center;
+                color: white;
+                border: solid rgba(0, 119, 255, 0.945) 1px;
+                width: 150px;
+                font-size: small;
+            }
+            #title{
+                margin-bottom: 50px ;
+            }
+            img{
+                width: 100px;
+                padding: 10px;
+            }
+            #head{
+                padding: 5px;
+                background-color: rgb(216, 216, 216);
+            }
+            #line{
+                padding: 1px;
+                background-color: rgb(216, 216, 216);
+            }
+            #titlehead{
+                color: red;
+                padding-top: 1px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <img src="googlelogo.png">
+        </div>
+        <div id="titlehead">
+            <h2>Advanced Search</h2>
+            <div id="line"></div>
+        </div>
+        <form action="https://google.com/search">
+            <div id="main">
+                <div class="subdiv" id="title">
+                    <h4>Find pages with...</h4>
+                </div>
+                <div class="subdiv">
+                    <label>All these words:</label><input type="text" name="as_q" class="inp"><br>
+                </div>
+                <div class="subdiv">
+                    <label>this exact word or phase:</label><input type="text" name="as_epq" class="inp"><br>
+                </div>
+                <div class="subdiv">
+                    <label>any of these words:</label><input type="text" name="as_oq" class="inp"><br>
+                </div>
+                <div class="subdiv">
+                    <label>none of these words:</label><input type="text" name="as_eq" class="inp"><br>
+                </div>
+            </div>
+            <input type="submit" value="Advanced Search" id="button">
+        </form>
+    </body>
+</html>
